@@ -79,3 +79,20 @@
   
 * LoadBalancer
   * Integrates with public cloud platform
+
+> Get CIDR
+`k get no -o jsonpath='{.items[*].spec.podCIDR}'`
+
+### DEMO1
+* access to Pod `kubectl exec <POD_NAME> bash`
+* update ubuntu in Pod `apt-get update -y`
+* install few tools
+  * `apt-get install -y iputils-ping curl dnsutils iproute2`
+
+> Connect to NodePort
+
+* <SERVICE_NAME>:<PORT>
+  * `curl hello-svc:8080`
+
+* <NODE_IP>:<NODE_PORT>
+  * `curl 172.18.0.3:30001`
