@@ -1,5 +1,9 @@
 # Learning Kube from acloud.guru
 
+## Resource
+
+[github](https://github.com/ACloudGuru-Resources/Course_Kubernetes_Deep_Dive_NP/tree/master/sample-app/mysql-wordpress-pd)
+
 ## Kube Big Picture 
 * Control plane (Master Node)
   * etcd
@@ -46,3 +50,32 @@
 * The Service Network
 * Lab
 * Summary
+
+### House Rules
+* All Nodes can talk
+* All Pods can talk (No NAT)
+* Every Pod gets it's own IP
+
+![kube-network](./image/kube-network-basic.png)
+
+### Service
+![kube-service](./image/kube-services.png)
+
+* Every service have
+  * Name
+  * IP
+  > Stable neverchange name and IP whole life
+
+#### Service Type
+
+* ClusterIP (default)
+  * Gets own IP
+  * Only accessible from within cluster
+
+* NodePord
+  * Gets cluster-wide port
+  * Also accessible from outside of cluster
+![kube-nodepord](./image/kube-node-port.png)
+  
+* LoadBalancer
+  * Integrates with public cloud platform
