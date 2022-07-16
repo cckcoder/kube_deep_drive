@@ -91,8 +91,22 @@
 
 > Connect to NodePort
 
+Need to be in side pod for this method.
 * <SERVICE_NAME>:<PORT>
   * `curl hello-svc:8080`
 
+Can access from external
 * <NODE_IP>:<NODE_PORT>
   * `curl 172.18.0.3:30001`
+
+## Storage in Kube
+![kube-storage-plan](./image/kube-storage-lesson.png)
+
+### High-level Storage Requirement
+
+> Storage is Vital!!
+![kube-high-lv-storage](./image/kube-high-lv-storage.png)
+
+> Kube Storage
+![kube-storage](./image/kube-storage.png)
+
