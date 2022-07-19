@@ -1,0 +1,23 @@
+#apiVersion: v1
+#kind: PersistentVolume
+#metadata:
+  #name: pv1
+#spec:
+  #storageClassName: ssd
+  #capacity:
+    #storage: 5Gi
+  #persistentVolumeReclaimPolicy: Retain
+  #accessModes:
+    #- ReadWriteOnce
+#
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: code
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: do-block-storage

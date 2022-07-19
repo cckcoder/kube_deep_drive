@@ -110,3 +110,5 @@ Can access from external
 > Kube Storage
 ![kube-storage](./image/kube-storage.png)
 
+## Container Strage Interface (CSI)
+
