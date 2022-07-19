@@ -112,3 +112,8 @@ Can access from external
 
 ## Container Strage Interface (CSI)
 
+### Access modes
+* RWO: ReadWriteOnce
+* RWM: ReadWriteMany
+* ROM: ReadOnlyMany
+
