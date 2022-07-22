@@ -117,3 +117,16 @@ Can access from external
 * RWM: ReadWriteMany
 * ROM: ReadOnlyMany
 
+### Kube Storate Demo
+
+![PVC Demo and Lab](https://github.com/ACloudGuru-Resources/Course_Kubernetes_Deep_Dive_NP/blob/master/sample-app/mysql-wordpress-pd/mysql-deployment.yaml)
+
+> IMPORTANT DON'T DO THIS ON PROD
+just for demo we use imperative define secretkey
+`kubectl create secret generic mysql-pass --from-literal=password=PassPass123`
+
+then check secret
+`kubectl get secrets`
+
+
+## From Code to Kube
