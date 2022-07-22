@@ -129,4 +129,5 @@ then check secret
 `kubectl get secrets`
 
 
-## From Code to Kube
+## Kube Deployment
+![deployment](./image/kube-deployment.png)
