@@ -144,3 +144,13 @@ then check secret
 > See detail of roll-out
 
 `kubectl rollout status deploy <DEPLOY_NAME>`
+
+> Rollout History
+
+`kubectl rollout history deploy <DEPLOY_NAME>`
+
+* roll out history with revision
+`kubectl rollout history deploy test --revision=3`
+
+then `kubectl rollout undo deploy test`
+

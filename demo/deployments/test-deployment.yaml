@@ -12,7 +12,7 @@ spec:
   minReadySeconds: 5
   strategy:
     rollingUpdate:
-      maxSurge: 1
+      maxSurge: 50%
       maxUnavailable: 0
     type: RollingUpdate
   template:
@@ -21,5 +21,5 @@ spec:
         run: test
     spec:
       containers:
-      - image: nginx:stable
+      - image: nginx:latest
         name: nginx-ctr
