@@ -131,3 +131,16 @@ then check secret
 
 ## Kube Deployment
 ![deployment](./image/kube-deployment.png)
+
+> For check version of Kube
+
+`k version -o yaml`
+
+> Check Replica Set
+
+* `kubectl get rs`
+* `kubectl get rs -o wide`
+
+> See detail of roll-out
+
+`kubectl rollout status deploy <DEPLOY_NAME>`
