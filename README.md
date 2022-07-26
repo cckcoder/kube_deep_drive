@@ -167,4 +167,18 @@ then `kubectl rollout undo deploy test`
 
 [demo code](https://github.com/ACloudGuru-Resources/Course_Kubernetes_Deep_Dive_NP/tree/master/lesson-auto-scaling)
 
-### Cluster Autoscaler
+## RBAC and Admission Control
+![big picture](./image/kube-rbac-big-picture.png)
+
+> !Kube does NOT do Users
+
+can manage Users externally
+* Active Directory
+* IAM
+* Other
+
+### config
+`kubectl config current-context`
+
+> Details Cluster Role
+`kubectl get clusterrolebindings`
