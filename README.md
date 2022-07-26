@@ -154,3 +154,17 @@ then check secret
 
 then `kubectl rollout undo deploy test`
 
+## Application Automatically
+
+### HPA (Horizontal Pod Autoscalar)
+![kube-hpa](./image/kube-hpa.png)
+
+> It's all about Pods
+
+![kube-hpa-2](./image/kube-hpa-2)
+
+> Github example code
+
+[demo code](https://github.com/ACloudGuru-Resources/Course_Kubernetes_Deep_Dive_NP/tree/master/lesson-auto-scaling)
+
+### Cluster Autoscaler
